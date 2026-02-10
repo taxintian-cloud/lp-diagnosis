@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料相談フォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">無料診断フォーム</h1>
+        <p class="subtitle">今のWeb導線の状態を整理して、改善ポイントを見つけましょう。</p>
+
+        <!-- 1 -->
+        <div class="question">
+            <label for="name">お名前（例：山田太郎）</label>
+            <input type="text" id="name" placeholder="山田太郎">
+        </div>
+
+        <!-- 2 -->
+        <div class="question">
+            <label for="experience">Web運用経験は？</label>
+            <select id="experience">
+                <option value="">選択してください</option>
+                <option value="none">ほとんどなし</option>
+                <option value="some">少しある</option>
+                <option value="much">かなりある</option>
+            </select>
+        </div>
+
+        <!-- 3 -->
+        <div class="question">
+            <label for="sns">SNS運用状況は？</label>
+            <select id="sns">
+                <option value="">選択してください</option>
+                <option value="low">週1回未満</option>
+                <option value="medium">週1〜3回</option>
+                <option value="high">週4回以上</option>
+            </select>
+        </div>
+
+        <!-- 4 -->
+        <div class="question">
+            <label for="reservation">予約導線の状況は？</label>
+            <select id="reservation">
+                <option value="">選択してください</option>
+                <option value="dm">DMのみ</option>
+                <option value="form">LPフォームあり</option>
+                <option value="both">LPフォーム＋DM</option>
+            </select>
+        </div>
+
+        <!-- 5 -->
+        <div class="question">
+            <label for="problem">現状、集客で一番困っていることは？</label>
+            <select id="problem">
+                <option value="">選択してください</option>
+                <option value="no_reserve">予約が入らない</option>
+                <option value="sns_continue">SNS運用が続かない</option>
+                <option value="lp_unclear">LPやWebの改善点がわからない</option>
+            </select>
+        </div>
+
+        <!-- 6 -->
+        <div class="question">
+            <label for="goal">今年中に最優先で達成したいことは？</label>
+            <select id="goal">
+                <option value="">選択してください</option>
+                <option value="increase">予約数UP</option>
+                <option value="stabilize">集客安定</option>
+                <option value="web_improve">Web改善</option>
+                <option value="revenue">収益性を高めたい</option>
+            </select>
+        </div>
+
+
+        <!-- 7 -->
+        <div class="question">
+            <label for="self_eval">自己評価：Web導線の完成度は？</label>
+            <select id="self_eval">
+                <option value="">選択してください</option>
+                <option value="perfect">ほぼ完璧</option>
+                <option value="ok">まあまあ</option>
+                <option value="needs">大幅に改善が必要</option>
+            </select>
+        </div>
+
+        <button class="submit-btn">診断する</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

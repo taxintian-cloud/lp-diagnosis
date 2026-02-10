@@ -1,0 +1,131 @@
+/* ベース */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    background: #0f1115;
+    color: #e5e7eb;
+    line-height: 1.8;
+    font-size: clamp(17px, 1.9vw, 18.5px);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background: #1a1c23;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1.title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f9fafb;
+}
+
+p.subtitle {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #e5e7eb;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 999px;
+    border: 1px solid #9ca3af;
+    background: #0f1115;
+    color: #e5e7eb;
+    outline: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #d1d5db;
+}
+
+input:focus, select:focus {
+    border-color: #9ca3af;
+    box-shadow: 0 0 8px rgba(156,163,175,0.6);
+}
+
+.submit-btn, .consult-btn {
+    display: inline-block;
+    margin: 24px auto 36px;
+    max-width: 600px;
+    padding: 14px 32px;
+    border: 1px solid #9ca3af;
+    border-radius: 999px;
+    font-size: 1.05em;
+    font-weight: 600;
+    background: #0f1115;
+    color: #9ca3af;
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.submit-btn:hover, .consult-btn:hover {
+    background: #9ca3af;
+    color: #0f1115;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.submit-btn:active, .consult-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* 診断結果 */
+#result {
+    margin-top: 30px;
+    padding: 24px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    line-height: 1.8;
+    display: none;
+    white-space: pre-line;
+    text-align: left;
+    font-weight: 500;
+}
+
+#result.complete {
+    background-color: #d4edda; /* 完全問題なし */
+    color: #0f1115;
+}
+
+#result.warning {
+    background-color: #fff3cd; /* 軽微改善 */
+    color: #0f1115;
+}
+
+#result.alert {
+    background-color: #ffeeba; /* 改善推奨 */
+    color: #0f1115;
+}
+
+#result.critical {
+    background-color: #e76c6c; /* やわらかめの赤 */
+    color: #0f1115; /* 黒っぽい文字で読みやすく */
+}
