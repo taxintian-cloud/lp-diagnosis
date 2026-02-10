@@ -3,6 +3,8 @@
 このリポジトリは、個人事業主・ひとり経営者向けLPに連動する  
 **無料Web導線診断フォーム**です。
 
+リンクはこちら⇒https://taxintian-cloud.github.io/lp-diagnosis/
+
 ---
 
 ## 概要
