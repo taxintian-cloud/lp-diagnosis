@@ -9,15 +9,14 @@
 <body>
     <div class="container">
         <h1 class="title">無料診断フォーム</h1>
-        <p class="subtitle">今のWeb導線の状態を整理して、改善ポイントを見つけましょう。</p>
+        <p class="subtitle">
+            この診断では、<br>
+            たった１分で、あなたのWeb導線の改善ポイントがわかります。<br>
+            ※営業は一切しません。
+        </p>
 
+    
         <!-- 1 -->
-        <div class="question">
-            <label for="name">お名前（例：山田太郎）</label>
-            <input type="text" id="name" placeholder="山田太郎">
-        </div>
-
-        <!-- 2 -->
         <div class="question">
             <label for="experience">Web運用経験は？</label>
             <select id="experience">
@@ -28,7 +27,7 @@
             </select>
         </div>
 
-        <!-- 3 -->
+        <!-- 2 -->
         <div class="question">
             <label for="sns">SNS運用状況は？</label>
             <select id="sns">
@@ -39,7 +38,7 @@
             </select>
         </div>
 
-        <!-- 4 -->
+        <!-- 3 -->
         <div class="question">
             <label for="reservation">予約導線の状況は？</label>
             <select id="reservation">
@@ -50,7 +49,7 @@
             </select>
         </div>
 
-        <!-- 5 -->
+        <!-- 4 -->
         <div class="question">
             <label for="problem">現状、集客で一番困っていることは？</label>
             <select id="problem">
@@ -61,7 +60,7 @@
             </select>
         </div>
 
-        <!-- 6 -->
+        <!-- 5 -->
         <div class="question">
             <label for="goal">今年中に最優先で達成したいことは？</label>
             <select id="goal">
@@ -74,7 +73,7 @@
         </div>
 
 
-        <!-- 7 -->
+        <!-- 6 -->
         <div class="question">
             <label for="self_eval">自己評価：Web導線の完成度は？</label>
             <select id="self_eval">
@@ -85,6 +84,13 @@
             </select>
         </div>
 
+
+        <!-- 7 -->
+        <div class="question">
+            <label for="name">お名前（例：山田太郎）</label>
+            <input type="text" id="name" placeholder="山田太郎">
+        </div>
+
         <button class="submit-btn">診断する</button>
 
         <div id="result"></div>
@@ -93,3 +99,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
